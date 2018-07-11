@@ -1,5 +1,5 @@
 import requests,re
-from PIL import Image
+
 def find_img_links(html):
 	pat=re.compile('src="(.+?.jpg)" bdwater=')
 	links=re.findall(pat,html)
